@@ -78,6 +78,7 @@ const itemSchema = mongoose.Schema({
     Item.findByIdAndRemove(checkedItemId, (err) => {
       if (!err) {
         console.log("item got deleted")
+        console.log('....');
         res.redirect("/")
         }
       })
@@ -88,6 +89,7 @@ const itemSchema = mongoose.Schema({
           }
       })}
   })
+  
 
 
 
